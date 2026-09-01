@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BloomRoom Lab — Psicologia del Trauma Relazionale, Terapia Transpersonale e sviluppo personale. Uno spazio professionale per comprendere, integrare e trasformare.">
+  <meta name="theme-color" content="#24343A">
+  <title>BloomRoom Lab — Trauma Relazionale & Sviluppo Transpersonale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#24343A; --blue:#829BA5; --sage:#A8B9A5; --sand:#E8DFD2;
+      --ivory:#F7F5F0; --clay:#C99F8A; --white:#fff; --line:rgba(36,52,58,.14);
+      --shadow:0 24px 70px rgba(36,52,58,.10); --radius:28px; --max:1180px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--ivory);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
+    .wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
+    .eyebrow{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#5f777f}
+    h1,h2,h3{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.03;margin:0}
+    h1{font-size:clamp(3.2rem,7vw,6.5rem);letter-spacing:-.035em}
+    h2{font-size:clamp(2.5rem,5vw,4.4rem);letter-spacing:-.025em}
+    h3{font-size:2rem}
+    p{margin:0 0 1rem}.muted{color:#5f6f74}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:15px 22px;font-weight:700;transition:.25s ease;border:1px solid transparent}
+    .btn-primary{background:var(--ink);color:var(--white)} .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(36,52,58,.18)}
+    .btn-ghost{border-color:var(--line);background:rgba(255,255,255,.45)} .btn-ghost:hover{background:var(--white)}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(247,245,240,.82);backdrop-filter:blur(18px);border-bottom:1px solid transparent}
+    .nav.scrolled{border-color:var(--line)} .nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-weight:800;letter-spacing:-.03em;font-size:1.05rem}.brand span{font-weight:500;color:#6e8388}
+    .nav-links{display:flex;gap:24px;align-items:center;font-size:.9rem}.nav-links a{color:#43555b}.nav-links a:hover{color:var(--ink)}
+    .menu{display:none;border:0;background:none;font-size:1.5rem;color:var(--ink)}
+    .hero{padding:150px 0 90px;overflow:hidden;position:relative;background:radial-gradient(circle at 85% 15%,rgba(168,185,165,.55),transparent 34%),linear-gradient(135deg,#f7f5f0 0%,#f2eee6 55%,#e4eceb 100%)}
+    .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:64px;align-items:center}.hero-copy{max-width:720px}
+    .hero h1{margin:16px 0 24px}.hero-lead{font-size:1.18rem;max-width:680px;color:#506166}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0}
+    .trust{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.trust span{padding:9px 13px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.45);font-size:.8rem}
+    .hero-art{min-height:540px;border-radius:42% 42% 18% 18%;background:linear-gradient(145deg,rgba(130,155,165,.42),rgba(168,185,165,.5)),url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1000&q=85') center/cover;box-shadow:var(--shadow);position:relative}
+    .hero-card{position:absolute;bottom:28px;left:-32px;right:28px;background:rgba(255,255,255,.87);backdrop-filter:blur(16px);padding:22px;border-radius:22px;box-shadow:0 18px 50px rgba(36,52,58,.14)}
+    .hero-card strong{display:block;margin-bottom:5px}.hero-card small{color:#64757a}
+    section{padding:110px 0}.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:48px}.section-head > div:first-child{max-width:720px}.section-head p{max-width:470px;color:#5f6f74}
+    .recognize{background:var(--white)} .pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.pain{padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:var(--ivory);min-height:180px}.pain b{font-size:1.1rem}.pain p{margin-top:14px;color:#64757a}
+    .method{background:#e6eeec}.method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.method-card{padding:36px;border-radius:var(--radius);background:rgba(255,255,255,.66);border:1px solid rgba(36,52,58,.09)}.num{font-size:.75rem;letter-spacing:.14em;font-weight:700;color:#6b8085;margin-bottom:44px}.method-card p{color:#5f6f74;margin-top:14px}
+    .about{background:var(--sand)} .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}.portrait{min-height:560px;border-radius:36px;background:url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=85') center/cover}.about-copy p{font-size:1.1rem;color:#586a6f}.credentials{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:28px 0}.credential{padding:14px 16px;border-left:3px solid var(--blue);background:rgba(255,255,255,.38)}
+    .video{background:var(--ink);color:var(--white)} .video .section-head p{color:#c1ccce}.video-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:28px}.video-frame{aspect-ratio:16/9;border-radius:24px;overflow:hidden;background:#152328;box-shadow:var(--shadow)}.video-frame iframe{width:100%;height:100%;border:0}.video-list{display:grid;gap:12px}.video-item{padding:19px;border:1px solid rgba(255,255,255,.14);border-radius:18px;background:rgba(255,255,255,.05)}.video-item small{display:block;color:#9fb0b4;margin-bottom:5px}.video-item:hover{background:rgba(255,255,255,.09)}
+    .services{background:var(--ivory)} .service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.service{padding:34px;border:1px solid var(--line);border-radius:var(--radius);background:var(--white);min-height:310px;display:flex;flex-direction:column}.service .tag{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:#6b8085;font-weight:700}.service h3{margin:16px 0 12px}.service p{color:#617176;max-width:520px}.service .link{margin-top:auto;font-weight:700}.service.featured{background:linear-gradient(145deg,#dfeae7,#f7f5f0)}
+    .lab{background:var(--white)} .lab-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.article{border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--ivory)}.article-img{aspect-ratio:16/10;background:linear-gradient(135deg,var(--sage),var(--sand))}.article-body{padding:24px}.article-body small{color:#718389}.article-body h3{font-size:1.75rem;margin:9px 0 10px}.article-body p{color:#66777b}
+    .lead{background:linear-gradient(135deg,#dbe7e4,#eee7dc)} .lead-grid{display:grid;grid-template-columns:1fr .8fr;gap:60px;align-items:center}.lead-box{background:rgba(255,255,255,.72);padding:30px;border-radius:26px;border:1px solid rgba(36,52,58,.1)}.lead-box input{width:100%;padding:15px 16px;border:1px solid var(--line);border-radius:13px;background:var(--white);font:inherit;margin-bottom:10px}
+    .final{background:var(--ink);color:var(--white);text-align:center}.final p{color:#c4ced0;max-width:620px;margin:20px auto 28px}.final .btn-primary{background:var(--white);color:var(--ink)}
+    footer{background:#19282d;color:#c7d0d2;padding:40px 0}.footer-grid{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}.footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:.85rem}.footer-note{font-size:.78rem;color:#87979b;max-width:650px;margin-top:22px}
+    .reveal{opacity:0;transform:translateY(18px);transition:.7s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:900px){.nav-links{display:none}.menu{display:block}.hero-grid,.about-grid,.video-grid,.lead-grid{grid-template-columns:1fr}.hero-art{min-height:430px}.hero-card{left:18px}.pain-grid,.method-grid,.lab-grid{grid-template-columns:1fr 1fr}.section-head{display:block}.section-head p{margin-top:18px}.portrait{min-height:420px}}
+    @media(max-width:620px){.wrap{width:min(calc(100% - 28px),var(--max))}.nav-inner{height:68px}.hero{padding-top:115px}.hero-art{min-height:360px}.pain-grid,.method-grid,.service-grid,.lab-grid{grid-template-columns:1fr}.credentials{grid-template-columns:1fr}section{padding:78px 0}.footer-grid{display:block}.footer-links{margin-top:20px}.hero h1{font-size:3.35rem}}
+  </style>
+</head>
+<body>
+<header class="nav" id="nav"><div class="wrap nav-inner">
+  <a class="brand" href="#top">BloomRoom <span>Lab</span></a>
+  <nav class="nav-links" aria-label="Navigazione principale">
+    <a href="#metodo">Il Metodo</a><a href="#percorsi">Percorsi</a><a href="#chi-siamo">Chi Sono</a><a href="#lab">Lab</a><a href="#contatti">Contatti</a>
+    <a class="btn btn-primary" href="#orientamento">Trova il tuo percorso</a>
+  </nav>
+  <button class="menu" aria-label="Apri menu" onclick="document.body.classList.toggle('menu-open')">☰</button>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap hero-grid">
+  <div class="hero-copy reveal"><div class="eyebrow">Psicologia · Trauma Relazionale · Transpersonale</div>
+    <h1>Quello che ti è successo non deve decidere chi diventerai.</h1>
+    <p class="hero-lead">Uno spazio professionale per comprendere le ferite relazionali, integrare ciò che hai vissuto e sviluppare un modo nuovo di stare in relazione con te stesso e con gli altri.</p>
+    <div class="actions"><a class="btn btn-primary" href="#orientamento">Inizia da qui <span>→</span></a><a class="btn btn-ghost" href="#metodo">Scopri l'approccio</a></div>
+    <div class="trust"><span>Approccio integrato</span><span>Contenuti specialistici</span><span>Percorsi online</span><span>Spazio riservato</span></div>
+  </div>
+  <div class="hero-art reveal"><div class="hero-card"><strong>BloomRoom Lab</strong><small>Comprendere · Integrare · Trasformare</small></div></div>
+</div></section>
+
+<section class="recognize" id="riconosci"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">Forse ti riconosci</div><h2>Quando sai che qualcosa deve cambiare, ma non sai ancora come.</h2></div><p>Non sempre il problema è capire cosa fare. A volte il lavoro più profondo è comprendere perché continuiamo a reagire, scegliere e proteggerci nello stesso modo.</p></div>
+<div class="pain-grid"><article class="pain reveal"><b>Ripeti gli stessi schemi</b><p>Nelle relazioni, nelle scelte o nel modo in cui affronti il conflitto.</p></article><article class="pain reveal"><b>Fai fatica a sentirti al sicuro</b><p>Dentro una relazione, nel tuo corpo o semplicemente nella tua vita quotidiana.</p></article><article class="pain reveal"><b>Dai troppo agli altri</b><p>E ti accorgi di perdere progressivamente il contatto con i tuoi bisogni.</p></article><article class="pain reveal"><b>Comprendi ma non riesci a cambiare</b><p>La consapevolezza razionale non sempre modifica automaticamente le risposte emotive.</p></article><article class="pain reveal"><b>Una storia continua a pesare</b><p>Un'esperienza, una perdita o una relazione può continuare a influenzare il presente.</p></article><article class="pain reveal"><b>Vuoi andare più in profondità</b><p>Non solo “stare meglio”, ma sviluppare maggiore consapevolezza e libertà di scelta.</p></article></div></div></section>
+
+<section class="method" id="metodo"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">L'approccio BloomRoom</div><h2>Dalla sopravvivenza alla presenza. Dalla ripetizione alla scelta.</h2></div><p>Un linguaggio che integra psicologia del trauma relazionale, lavoro sulla consapevolezza e prospettiva transpersonale, senza ridurre la persona alla sua storia.</p></div>
+<div class="method-grid"><article class="method-card reveal"><div class="num">01 — COMPRENDERE</div><h3>Dare un significato a ciò che vivi.</h3><p>Trauma relazionale, attaccamento, schemi emotivi e dinamiche relazionali diventano leggibili.</p></article><article class="method-card reveal"><div class="num">02 — INTEGRARE</div><h3>Creare più sicurezza dentro di te.</h3><p>Il lavoro considera esperienza, emozioni, corpo, consapevolezza e relazione come dimensioni interconnesse.</p></article><article class="method-card reveal"><div class="num">03 — TRASFORMARE</div><h3>Aprire possibilità nuove.</h3><p>Lo sviluppo transpersonale amplia la prospettiva e sostiene un rapporto più coerente con ciò che conta per te.</p></article></div></div></section>
+
+<section class="about" id="chi-siamo"><div class="wrap about-grid"><div class="portrait reveal" role="img" aria-label="Ritratto della professionista"></div><div class="about-copy reveal"><div class="eyebrow">Chi c'è dietro BloomRoom</div><h2>Prima di accompagnarti, voglio che tu sappia chi sono.</h2><p>La fiducia nasce dall'incontro tra competenza e presenza. Questa sezione è progettata per raccontare formazione, specializzazioni, esperienza professionale, metodo e valori senza trasformare la biografia in un curriculum infinito.</p><div class="credentials"><div class="credential">Formazione professionale</div><div class="credential">Specializzazione trauma</div><div class="credential">Approccio transpersonale</div><div class="credential">Aggiornamento continuo</div></div><a class="btn btn-primary" href="#contatti">Conosci la professionista →</a></div></div></section>
+
+<section class="video" id="video"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">BloomRoom su YouTube</div><h2>Inizia da una domanda.</h2></div><p>Il canale editoriale è già un asset forte del brand: video, pratiche, approfondimenti e contenuti divulgativi possono diventare il cuore della relazione con il pubblico.</p></div>
+<div class="video-grid"><div class="video-frame reveal"><iframe src="https://www.youtube.com/embed/yVrVGqIaCcE" title="Video BloomRoom Lab" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="video-list reveal"><a class="video-item" href="https://www.youtube.com/@BloomRoomLab" target="_blank"><small>CANale</small><b>BloomRoom Lab · Psicologia del Trauma Relazionale</b></a><a class="video-item" href="https://www.youtube.com/watch?v=yVrVGqIaCcE" target="_blank"><small>CONTENUTO</small><b>Approfondimenti e divulgazione psicologica</b></a><a class="video-item" href="https://www.youtube.com/@BloomRoomLab/playlists" target="_blank"><small>PLAYLIST</small><b>Esplora le serie e le raccolte</b></a></div></div></div></section>
+
+<section class="services" id="percorsi"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">Percorsi & Servizi</div><h2>Non esiste un unico modo di stare meglio. Esiste il percorso più coerente con ciò che stai vivendo.</h2></div><p>La pagina non deve costringere l'utente a “comprare”. Deve aiutarlo a riconoscersi, orientarsi e compiere il passo successivo con meno incertezza.</p></div>
+<div class="service-grid"><article class="service featured reveal"><span class="tag">01 · Individuale</span><h3>Percorso individuale</h3><p>Uno spazio riservato per lavorare sulla propria storia, sulle relazioni, sugli schemi e sugli obiettivi personali.</p><a class="link" href="#orientamento">Scopri il percorso →</a></article><article class="service reveal"><span class="tag">02 · Sviluppo</span><h3>Sviluppo transpersonale</h3><p>Per chi desidera approfondire consapevolezza, significato, identità e possibilità di trasformazione.</p><a class="link" href="#orientamento">Scopri il percorso →</a></article><article class="service reveal"><span class="tag">03 · Formazione</span><h3>Corsi online</h3><p>Contenuti strutturati per apprendere strumenti e approfondire temi specifici in autonomia.</p><a class="link" href="#lab">Esplora la formazione →</a></article><article class="service reveal"><span class="tag">04 · Esperienze</span><h3>Workshop & masterclass</h3><p>Esperienze intensive dedicate a temi specifici, divulgazione e pratica consapevole.</p><a class="link" href="#contatti">Vedi gli appuntamenti →</a></article></div></div></section>
+
+<section class="lab" id="lab"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">BloomRoom Lab</div><h2>Un laboratorio per comprendere ciò che accade dentro di noi.</h2></div><p>Il sito diventa una piattaforma editoriale: articoli, video, risorse e percorsi collegati tra loro.</p></div>
+<div class="lab-grid"><article class="article reveal"><div class="article-img"></div><div class="article-body"><small>TRAUMA RELAZIONALE</small><h3>Perché continuiamo a ripetere gli stessi schemi?</h3><p>Un'introduzione ai meccanismi che possono mantenere una dinamica relazionale nel tempo.</p><a class="link" href="#">Leggi l'approfondimento →</a></div></article><article class="article reveal"><div class="article-img"></div><div class="article-body"><small>CONSAPEVOLEZZA</small><h3>Quando comprendere non basta</h3><p>Il passaggio dalla comprensione cognitiva a un'esperienza più integrata.</p><a class="link" href="#">Leggi l'approfondimento →</a></div></article><article class="article reveal"><div class="article-img"></div><div class="article-body"><small>TRANSPERSONALE</small><h3>Che cos'è la Terapia Transpersonale?</h3><p>Una guida introduttiva per capire linguaggio, obiettivi e confini dell'approccio.</p><a class="link" href="#">Leggi l'approfondimento →</a></div></article></div></div></section>
+
+<section class="lead" id="orientamento"><div class="wrap lead-grid"><div class="reveal"><div class="eyebrow">Una prima risorsa gratuita</div><h2>Da dove cominciare?</h2><p class="muted">Scarica una guida introduttiva e scopri alcuni segnali che possono indicare che una relazione sta riattivando una ferita del passato.</p></div><form class="lead-box reveal" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Richiesta registrata ✓';"><input type="text" aria-label="Nome" placeholder="Il tuo nome" required><input type="email" aria-label="Email" placeholder="La tua email" required><button class="btn btn-primary" type="submit">Ricevi la guida →</button><small class="muted">Nessuna promessa terapeutica. Informazioni e risorse divulgative.</small></form></div></section>
+
+<section class="final" id="contatti"><div class="wrap reveal"><div class="eyebrow">Il primo passo</div><h2>Non devi avere tutte le risposte.</h2><p>Puoi iniziare raccontando semplicemente ciò che stai vivendo. Da lì si può capire quale direzione abbia più senso per te.</p><a class="btn btn-primary" href="#orientamento">Richiedi un primo orientamento →</a></div></section>
+</main>
+<footer><div class="wrap"><div class="footer-grid"><div><div class="brand">BloomRoom <span>Lab</span></div><div class="footer-note">Psicologia del Trauma Relazionale · Terapia Transpersonale · Sviluppo Personale. Il contenuto del sito ha finalità informative e non sostituisce una valutazione o un trattamento professionale.</div></div><div class="footer-links"><a href="https://www.youtube.com/@BloomRoomLab" target="_blank">YouTube</a><a href="https://www.instagram.com/lis.bloomroomlab/" target="_blank">Instagram</a><a href="https://www.facebook.com/profile.php?id=61575780653871" target="_blank">Facebook</a><a href="#">Privacy</a><a href="#">Cookie</a></div></div></div></footer>
+<script>
+  const nav=document.getElementById('nav');
+  addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passive:true});
+  const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
