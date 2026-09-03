@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "trauma-relazionale",
+    "title": "Il trauma non è solo ciò che è accaduto",
+    "category": "Trauma Relazionale",
+    "excerpt": "È ciò che il corpo continua a ricordare — perché lavorare sul trauma non significa solo comprendere il passato, ma riconoscere come dirige il presente.",
+    "date": "2026-08-31",
+    "image": "../images/article_trauma.jpg"
+  },
+  {
+    "slug": "il-testimone-interiore",
+    "title": "Il Testimone interiore",
+    "category": "Transpersonale",
+    "excerpt": "Non sei ciò che accade, sei chi osserva ciò che sta accadendo — come sviluppare la capacità di riconoscere un'emozione senza esserne governati.",
+    "date": "2026-09-02",
+    "image": "../images/article_testimone.jpg"
+  },
+  {
+    "slug": "il-nostro-lato-oscuro",
+    "title": "Il nostro lato oscuro",
+    "category": "Consapevolezza",
+    "excerpt": "Il cammino per tornare a casa — conoscere ciò che abbiamo imparato a rifiutare di noi stessi, senza doverlo assecondare.",
+    "date": "2026-09-02",
+    "image": "../images/article_ombra.jpg"
+  }
+]
