@@ -6,7 +6,6 @@
   <meta name="description" content="BloomRoom Lab — Psicologia del Trauma Relazionale, Terapia Transpersonale e sviluppo personale. Uno spazio professionale per comprendere, integrare e trasformare.">
   <meta name="theme-color" content="#24343A">
   <title>BloomRoom Lab — Trauma Relazionale & Sviluppo Transpersonale</title>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
@@ -34,10 +33,6 @@
     .brand{font-weight:800;letter-spacing:-.03em;font-size:1.05rem}.brand span{font-weight:500;color:#6e8388}
     .nav-links{display:flex;gap:24px;align-items:center;font-size:.9rem}.nav-links a{color:#43555b}.nav-links a:hover{color:var(--ink)}
     .menu{display:none;border:0;background:none;font-size:1.5rem;color:var(--ink)}
-    .lang-switch{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:rgba(255,255,255,.45);flex-shrink:0}
-    .lang-switch button{border:0;background:none;font:inherit;font-weight:700;font-size:.85rem;padding:8px 14px;cursor:pointer;color:#5f777f;transition:.2s ease}
-    .lang-switch button.active{background:var(--ink);color:var(--white)}
-    .lang-switch button:hover:not(.active){color:var(--ink)}
     .hero{padding:150px 0 90px;overflow:hidden;position:relative;background:radial-gradient(circle at 85% 15%,rgba(168,185,165,.55),transparent 34%),linear-gradient(135deg,#f7f5f0 0%,#f2eee6 55%,#e4eceb 100%)}
     .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:64px;align-items:center}.hero-copy{max-width:720px}
     .hero h1{margin:16px 0 24px}.hero-lead{font-size:1.18rem;max-width:680px;color:#506166}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0}
@@ -64,241 +59,82 @@
 <header class="nav" id="nav"><div class="wrap nav-inner">
   <a class="brand" href="#top">BloomRoom <span>Lab</span></a>
   <nav class="nav-links" aria-label="Navigazione principale">
-    <a href="#metodo" data-i18n="nav.metodo">Il Metodo</a><a href="#percorsi" data-i18n="nav.percorsi">Percorsi</a><a href="#chi-siamo" data-i18n="nav.chisiamo">Chi Sono</a><a href="#lab" data-i18n="nav.blog">Blog</a><a href="#contatti" data-i18n="nav.contatti">Contatti</a>
+    <a href="#metodo">Il Metodo</a><a href="#percorsi">Percorsi</a><a href="#chi-siamo">Chi Sono</a><a href="#lab">Blog</a><a href="#contatti">Contatti</a>
   </nav>
-  <div class="lang-switch" role="group" aria-label="Selezione lingua">
-    <button type="button" data-lang="it" aria-label="Italiano">IT</button>
-    <button type="button" data-lang="es" aria-label="Español">ES</button>
-  </div>
   <button class="menu" aria-label="Apri menu" onclick="document.body.classList.toggle('menu-open')">☰</button>
 </div></header>
 
 <main id="top">
 <section class="hero"><div class="wrap hero-grid">
-  <div class="hero-copy reveal"><div class="eyebrow" data-i18n="hero.eyebrow">Psicologia · Trauma Relazionale · Transpersonale</div>
-    <h1 data-i18n="hero.h1">Quello che ti è successo non deve decidere chi diventerai.</h1>
-    <p class="hero-lead" data-i18n="hero.lead">Uno spazio professionale per comprendere le ferite relazionali, integrare ciò che hai vissuto e sviluppare un modo nuovo di stare in relazione con te stesso e con gli altri.</p>
-    <div class="actions"><a class="btn btn-primary" href="#orientamento" data-i18n="hero.cta1">Inizia da qui <span>→</span></a><a class="btn btn-ghost" href="#metodo" data-i18n="hero.cta2">Scopri l'approccio</a></div>
-    <div class="trust"><span data-i18n="hero.t1">Approccio integrato</span><span data-i18n="hero.t2">Contenuti specialistici</span><span data-i18n="hero.t3">Percorsi online</span><span data-i18n="hero.t4">Spazio riservato</span></div>
+  <div class="hero-copy reveal"><div class="eyebrow">Psicologia · Trauma Relazionale · Transpersonale</div>
+    <h1>Quello che ti è successo non deve decidere chi diventerai.</h1>
+    <p class="hero-lead">Uno spazio professionale per comprendere le ferite relazionali, integrare ciò che hai vissuto e sviluppare un modo nuovo di stare in relazione con te stesso e con gli altri.</p>
+    <div class="actions"><a class="btn btn-primary" href="#orientamento">Inizia da qui <span>→</span></a><a class="btn btn-ghost" href="#metodo">Scopri l'approccio</a></div>
+    <div class="trust"><span>Approccio integrato</span><span>Contenuti specialistici</span><span>Percorsi online</span><span>Spazio riservato</span></div>
   </div>
-  <div class="hero-art reveal"><div class="hero-card"><strong>BloomRoom Lab</strong><small data-i18n="hero.card">Comprendere · Integrare · Trasformare</small></div></div>
+  <div class="hero-art reveal"><div class="hero-card"><strong>BloomRoom Lab</strong><small>Comprendere · Integrare · Trasformare</small></div></div>
 </div></section>
 
-<section class="recognize" id="riconosci"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow" data-i18n="riconosci.eyebrow">Forse ti riconosci</div><h2 data-i18n="riconosci.h2">Quando sai che qualcosa deve cambiare, ma non sai ancora come.</h2></div><p data-i18n="riconosci.p">Non sempre il problema è capire cosa fare. A volte il lavoro più profondo è comprendere perché continuiamo a reagire, scegliere e proteggerci nello stesso modo.</p></div>
-<div class="pain-grid"><article class="pain reveal"><b data-i18n="riconosci.p1">Ripeti gli stessi schemi</b><p data-i18n="riconosci.p1d">Nelle relazioni, nelle scelte o nel modo in cui affronti il conflitto.</p></article><article class="pain reveal"><b data-i18n="riconosci.p2">Fai fatica a sentirti al sicuro</b><p data-i18n="riconosci.p2d">Dentro una relazione, nel tuo corpo o semplicemente nella tua vita quotidiana.</p></article><article class="pain reveal"><b data-i18n="riconosci.p3">Dai troppo agli altri</b><p data-i18n="riconosci.p3d">E ti accorgi di perdere progressivamente il contatto con i tuoi bisogni.</p></article><article class="pain reveal"><b data-i18n="riconosci.p4">Comprendi ma non riesci a cambiare</b><p data-i18n="riconosci.p4d">La consapevolezza razionale non sempre modifica automaticamente le risposte emotive.</p></article><article class="pain reveal"><b data-i18n="riconosci.p5">Una storia continua a pesare</b><p data-i18n="riconosci.p5d">Un'esperienza, una perdita o una relazione può continuare a influenzare il presente.</p></article><article class="pain reveal"><b data-i18n="riconosci.p6">Vuoi andare più in profondità</b><p data-i18n="riconosci.p6d">Non solo "stare meglio", ma sviluppare maggiore consapevolezza e libertà di scelta.</p></article></div></div></section>
+<section class="recognize" id="riconosci"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">Forse ti riconosci</div><h2>Quando sai che qualcosa deve cambiare, ma non sai ancora come.</h2></div><p>Non sempre il problema è capire cosa fare. A volte il lavoro più profondo è comprendere perché continuiamo a reagire, scegliere e proteggerci nello stesso modo.</p></div>
+<div class="pain-grid"><article class="pain reveal"><b>Ripeti gli stessi schemi</b><p>Nelle relazioni, nelle scelte o nel modo in cui affronti il conflitto.</p></article><article class="pain reveal"><b>Fai fatica a sentirti al sicuro</b><p>Dentro una relazione, nel tuo corpo o semplicemente nella tua vita quotidiana.</p></article><article class="pain reveal"><b>Dai troppo agli altri</b><p>E ti accorgi di perdere progressivamente il contatto con i tuoi bisogni.</p></article><article class="pain reveal"><b>Comprendi ma non riesci a cambiare</b><p>La consapevolezza razionale non sempre modifica automaticamente le risposte emotive.</p></article><article class="pain reveal"><b>Una storia continua a pesare</b><p>Un'esperienza, una perdita o una relazione può continuare a influenzare il presente.</p></article><article class="pain reveal"><b>Vuoi andare più in profondità</b><p>Non solo "stare meglio", ma sviluppare maggiore consapevolezza e libertà di scelta.</p></article></div></div></section>
 
-<section class="method" id="metodo"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow" data-i18n="metodo.eyebrow">L'approccio BloomRoom</div><h2 data-i18n="metodo.h2">Dalla sopravvivenza alla presenza. Dalla ripetizione alla scelta.</h2></div><p data-i18n="metodo.p">Un linguaggio che integra psicologia del trauma relazionale, lavoro sulla consapevolezza e prospettiva transpersonale, senza ridurre la persona alla sua storia.</p></div>
-<div class="method-grid"><article class="method-card reveal"><div class="num">01 — <span data-i18n="metodo.n1">COMPRENDERE</span></div><h3 data-i18n="metodo.h3a">Dare un significato a ciò che vivi.</h3><p data-i18n="metodo.pa">Trauma relazionale, attaccamento, schemi emotivi e dinamiche relazionali diventano leggibili.</p></article><article class="method-card reveal"><div class="num">02 — <span data-i18n="metodo.n2">INTEGRARE</span></div><h3 data-i18n="metodo.h3b">Creare più sicurezza dentro di te.</h3><p data-i18n="metodo.pb">Il lavoro considera esperienza, emozioni, corpo, consapevolezza e relazione come dimensioni interconnesse.</p></article><article class="method-card reveal"><div class="num">03 — <span data-i18n="metodo.n3">TRASFORMARE</span></div><h3 data-i18n="metodo.h3c">Aprire possibilità nuove.</h3><p data-i18n="metodo.pc">Lo sviluppo transpersonale amplia la prospettiva e sostiene un rapporto più coerente con ciò che conta per te.</p></article></div></div></section>
+<section class="method" id="metodo"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">L'approccio BloomRoom</div><h2>Dalla sopravvivenza alla presenza. Dalla ripetizione alla scelta.</h2></div><p>Un linguaggio che integra psicologia del trauma relazionale, lavoro sulla consapevolezza e prospettiva transpersonale, senza ridurre la persona alla sua storia.</p></div>
+<div class="method-grid"><article class="method-card reveal"><div class="num">01 — COMPRENDERE</div><h3>Dare un significato a ciò che vivi.</h3><p>Trauma relazionale, attaccamento, schemi emotivi e dinamiche relazionali diventano leggibili.</p></article><article class="method-card reveal"><div class="num">02 — INTEGRARE</div><h3>Creare più sicurezza dentro di te.</h3><p>Il lavoro considera esperienza, emozioni, corpo, consapevolezza e relazione come dimensioni interconnesse.</p></article><article class="method-card reveal"><div class="num">03 — TRASFORMARE</div><h3>Aprire possibilità nuove.</h3><p>Lo sviluppo transpersonale amplia la prospettiva e sostiene un rapporto più coerente con ciò che conta per te.</p></article></div></div></section>
 
-<section class="about" id="chi-siamo"><div class="wrap about-grid"><div class="portrait reveal" role="img" aria-label="Ritratto della professionista"></div><div class="about-copy reveal"><div class="eyebrow" data-i18n="about.eyebrow">Chi c'è dietro BloomRoom</div><h2 data-i18n="about.h2">Prima di accompagnarti, voglio che tu sappia chi sono.</h2><p data-i18n="about.p">La fiducia nasce dall'incontro tra competenza e presenza. Questa sezione è progettata per raccontare formazione, specializzazioni, esperienza professionale, metodo e valori senza trasformare la biografia in un curriculum infinito.</p><p class="specialization" data-i18n="about.spec">Specialista in traumi relazionali e dinamiche di abuso psicologico.</p><div class="credentials"><div class="credential" data-i18n="about.cred1">Formazione: <a href="https://www.inakipinuel.com" target="_blank" rel="noopener">Instituto Iñaki Piñuel</a> — Madrid</div><div class="credential" data-i18n="about.cred2">Escuela Sistémica Transpersonal (EDTe) — Universidad Miguel de Cervantes, Madrid</div></div><a class="btn btn-primary" href="#contatti" data-i18n="about.cta">Conosci la professionista →</a></div></div></section>
+<section class="about" id="chi-siamo"><div class="wrap about-grid"><div class="portrait reveal" role="img" aria-label="Ritratto della professionista"></div><div class="about-copy reveal"><div class="eyebrow">Chi c'è dietro BloomRoom</div><h2>Prima di accompagnarti, voglio che tu sappia chi sono.</h2><p>La fiducia nasce dall'incontro tra competenza e presenza. Questa sezione è progettata per raccontare formazione, specializzazioni, esperienza professionale, metodo e valori senza trasformare la biografia in un curriculum infinito.</p><p class="specialization">Specialista in traumi relazionali e dinamiche di abuso psicologico.</p><div class="credentials"><div class="credential">Formazione: <a href="https://www.inakipinuel.com" target="_blank" rel="noopener">Instituto Iñaki Piñuel</a> — Madrid</div><div class="credential">Escuela Sistémica Transpersonal (EDTe) — Universidad Miguel de Cervantes, Madrid</div></div><a class="btn btn-primary" href="#contatti">Conosci la professionista →</a></div></div></section>
 
 <section style="padding:64px 0;background:var(--white);text-align:center">
-  <div class="wrap reveal"><img src="images/brand_banner.png" alt="BloomRoom Lab — Escuela Sistémica Transpersonal EDTe · Instituto Iñaki Piñuel — Dalla Ferita alla Scelta"></div>
+  <div class="wrap reveal"><img src="images/brand_banner.png" alt="BloomRoom Lab — Escuela Sistémica Transpersonal EDTe · Instituto Iñaki Piñuel — Dalla Ferita alla Scelta" style="max-width:560px;width:100%;margin:0 auto"></div>
 </section>
 
-<section class="video" id="video"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow" data-i18n="video.eyebrow">BloomRoom su YouTube</div><h2 data-i18n="video.h2">Inizia da una domanda.</h2></div><p data-i18n="video.p">Il canale editoriale è già un asset forte del brand: video, pratiche, approfondimenti e contenuti divulgativi possono diventare il cuore della relazione con il pubblico.</p></div>
-<div class="video-grid"><div class="video-frame reveal"><iframe src="https://www.youtube.com/embed/yVrVGqIaCcE" title="Video BloomRoom Lab" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="video-list reveal"><a class="video-item" href="https://www.youtube.com/@BloomRoomLab" target="_blank"><small data-i18n="video.canale">CANALE</small><b data-i18n="video.canaleb">BloomRoom Lab · Psicologia del Trauma Relazionale</b></a><a class="video-item" href="https://www.youtube.com/watch?v=yVrVGqIaCcE" target="_blank"><small data-i18n="video.contenuto">CONTENUTO</small><b data-i18n="video.contenutob">Approfondimenti e divulgazione psicologica</b></a><a class="video-item" href="https://www.youtube.com/@BloomRoomLab/playlists" target="_blank"><small>PLAYLIST</small><b data-i18n="video.playlistb">Esplora le serie e le raccolte</b></a></div></div></div></section>
+<section class="video" id="video"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">BloomRoom su YouTube</div><h2>Inizia da una domanda.</h2></div><p>Il canale editoriale è già un asset forte del brand: video, pratiche, approfondimenti e contenuti divulgativi possono diventare il cuore della relazione con il pubblico.</p></div>
+<div class="video-grid"><div class="video-frame reveal"><iframe src="https://www.youtube.com/embed/yVrVGqIaCcE" title="Video BloomRoom Lab" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="video-list reveal"><a class="video-item" href="https://www.youtube.com/@BloomRoomLab" target="_blank"><small>CANALE</small><b>BloomRoom Lab · Psicologia del Trauma Relazionale</b></a><a class="video-item" href="https://www.youtube.com/watch?v=yVrVGqIaCcE" target="_blank"><small>CONTENUTO</small><b>Approfondimenti e divulgazione psicologica</b></a><a class="video-item" href="https://www.youtube.com/@BloomRoomLab/playlists" target="_blank"><small>PLAYLIST</small><b>Esplora le serie e le raccolte</b></a></div></div></div></section>
 
-<section class="services" id="percorsi"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow" data-i18n="servizi.eyebrow">Percorsi & Servizi</div><h2 data-i18n="servizi.h2">Non esiste un unico modo di stare meglio. Esiste il percorso più coerente con ciò che stai vivendo.</h2></div><p data-i18n="servizi.p">La pagina non deve costringere l'utente a "comprare". Deve aiutarlo a riconoscersi, orientarsi e compiere il passo successivo con meno incertezza.</p></div>
-<div class="service-grid"><article class="service featured reveal"><span class="tag">01 · Individuale</span><h3 data-i18n="servizi.s1h">Percorso individuale</h3><p data-i18n="servizi.s1p">Uno spazio riservato per lavorare sulla propria storia, sulle relazioni, sugli schemi e sugli obiettivi personali.</p><a class="link" href="#orientamento" data-i18n="servizi.s1c">Scopri il percorso →</a></article><article class="service reveal"><span class="tag">02 · <span data-i18n="servizi.s2tag">Sviluppo</span></span><h3 data-i18n="servizi.s2h">Sviluppo transpersonale</h3><p data-i18n="servizi.s2p">Per chi desidera approfondire consapevolezza, significato, identità e possibilità di trasformazione.</p><a class="link" href="#orientamento" data-i18n="servizi.s2c">Scopri il percorso →</a></article><article class="service reveal"><span class="tag">03 · <span data-i18n="servizi.s3tag">Formazione</span></span><h3 data-i18n="servizi.s3h">Corsi online</h3><p data-i18n="servizi.s3p">Contenuti strutturati per apprendere strumenti e approfondire temi specifici in autonomia.</p><a class="link" href="#lab" data-i18n="servizi.s3c">Esplora la formazione →</a></article><article class="service reveal"><span class="tag">04 · <span data-i18n="servizi.s4tag">Esperienze</span></span><h3 data-i18n="servizi.s4h">Workshop & masterclass</h3><p data-i18n="servizi.s4p">Esperienze intensive dedicate a temi specifici, divulgazione e pratica consapevole.</p><a class="link" href="#contatti" data-i18n="servizi.s4c">Vedi gli appuntamenti →</a></article></div></div></section>
+<section class="services" id="percorsi"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">Percorsi & Servizi</div><h2>Non esiste un unico modo di stare meglio. Esiste il percorso più coerente con ciò che stai vivendo.</h2></div><p>La pagina non deve costringere l'utente a "comprare". Deve aiutarlo a riconoscersi, orientarsi e compiere il passo successivo con meno incertezza.</p></div>
+<div class="service-grid"><article class="service featured reveal"><span class="tag">01 · Individuale</span><h3>Percorso individuale</h3><p>Uno spazio riservato per lavorare sulla propria storia, sulle relazioni, sugli schemi e sugli obiettivi personali.</p><a class="link" href="#orientamento">Scopri il percorso →</a></article><article class="service reveal"><span class="tag">02 · Sviluppo</span><h3>Sviluppo transpersonale</h3><p>Per chi desidera approfondire consapevolezza, significato, identità e possibilità di trasformazione.</p><a class="link" href="#orientamento">Scopri il percorso →</a></article><article class="service reveal"><span class="tag">03 · Formazione</span><h3>Corsi online</h3><p>Contenuti strutturati per apprendere strumenti e approfondire temi specifici in autonomia.</p><a class="link" href="#lab">Esplora la formazione →</a></article><article class="service reveal"><span class="tag">04 · Esperienze</span><h3>Workshop & masterclass</h3><p>Esperienze intensive dedicate a temi specifici, divulgazione e pratica consapevole.</p><a class="link" href="#contatti">Vedi gli appuntamenti →</a></article></div></div></section>
 
-<section class="lab" id="lab"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">BloomRoom Lab</div><h2 data-i18n="lab.h2">Un laboratorio per comprendere ciò che accade dentro di noi.</h2></div><p data-i18n="lab.p">Il sito diventa una piattaforma editoriale: articoli, video, risorse e percorsi collegati tra loro.</p></div>
-<div class="lab-grid"><article class="article reveal"><div class="article-img" style="background-image:url('images/article_trauma.jpg');background-size:cover;background-position:center"></div><div class="article-body"><small>TRAUMA RELAZIONALE</small><h3 data-i18n="lab.a1h">Il trauma non è solo ciò che è accaduto</h3><p data-i18n="lab.a1p">È ciò che il corpo continua a ricordare — perché lavorare sul trauma non significa solo comprendere il passato, ma riconoscere come dirige il presente.</p><a class="link" href="blog/trauma-relazionale.html" data-i18n="lab.leggi">Leggi l'approfondimento →</a></div></article><article class="article reveal"><div class="article-img" style="background-image:url('images/article_testimone.jpg');background-size:cover;background-position:center"></div><div class="article-body"><small>TRANSPERSONALE</small><h3 data-i18n="lab.a2h">Il Testimone interiore</h3><p data-i18n="lab.a2p">Non sei ciò che accade, sei chi osserva ciò che sta accadendo — come sviluppare la capacità di riconoscere un'emozione senza esserne governati.</p><a class="link" href="blog/il-testimone-interiore.html" data-i18n="lab.leggi">Leggi l'approfondimento →</a></div></article><article class="article reveal"><div class="article-img" style="background-image:url('images/article_ombra.jpg');background-size:cover;background-position:center"></div><div class="article-body"><small>CONSAPEVOLEZZA</small><h3 data-i18n="lab.a3h">Il nostro lato oscuro</h3><p data-i18n="lab.a3p">Il cammino per tornare a casa — conoscere ciò che abbiamo imparato a rifiutare di noi stessi, senza doverlo assecondare.</p><a class="link" href="blog/il-nostro-lato-oscuro.html" data-i18n="lab.leggi">Leggi l'approfondimento →</a></div></article></div></div></section>
+<section class="lab" id="lab"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">BloomRoom Lab</div><h2>Un laboratorio per comprendere ciò che accade dentro di noi.</h2></div><p>Il sito diventa una piattaforma editoriale: articoli, video, risorse e percorsi collegati tra loro.</p></div>
+<div class="lab-grid"><article class="article reveal"><div class="article-img" style="background-image:url('images/article_trauma.jpg');background-size:cover;background-position:center"></div><div class="article-body"><small>TRAUMA RELAZIONALE</small><h3>Il trauma non è solo ciò che è accaduto</h3><p>È ciò che il corpo continua a ricordare — perché lavorare sul trauma non significa solo comprendere il passato, ma riconoscere come dirige il presente.</p><a class="link" href="blog/trauma-relazionale.html">Leggi l'approfondimento →</a></div></article><article class="article reveal"><div class="article-img" style="background-image:url('images/article_testimone.jpg');background-size:cover;background-position:center"></div><div class="article-body"><small>TRANSPERSONALE</small><h3>Il Testimone interiore</h3><p>Non sei ciò che accade, sei chi osserva ciò che sta accadendo — come sviluppare la capacità di riconoscere un'emozione senza esserne governati.</p><a class="link" href="blog/il-testimone-interiore.html">Leggi l'approfondimento →</a></div></article><article class="article reveal"><div class="article-img" style="background-image:url('images/article_ombra.jpg');background-size:cover;background-position:center"></div><div class="article-body"><small>CONSAPEVOLEZZA</small><h3>Il nostro lato oscuro</h3><p>Il cammino per tornare a casa — conoscere ciò che abbiamo imparato a rifiutare di noi stessi, senza doverlo assecondare.</p><a class="link" href="blog/il-nostro-lato-oscuro.html">Leggi l'approfondimento →</a></div></article></div></div></section>
 
-<section class="lead" id="orientamento"><div class="wrap lead-grid"><div class="reveal"><div class="eyebrow" data-i18n="lead.eyebrow">Una prima risorsa gratuita</div><h2 data-i18n="lead.h2">Da dove cominciare?</h2><p class="muted" data-i18n="lead.p">Scarica una guida introduttiva e scopri alcuni segnali che possono indicare che una relazione sta riattivando una ferita del passato.</p></div><form class="lead-box reveal" onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓';"><input type="text" aria-label="Nome" placeholder="Il tuo nome" required><input type="email" aria-label="Email" placeholder="La tua email" required><button class="btn btn-primary" type="submit" data-i18n="lead.btn">Ricevi la guida →</button><small class="muted" data-i18n="lead.note">Nessuna promessa terapeutica. Informazioni e risorse divulgative.</small></form></div></section>
+<section class="lead" id="orientamento"><div class="wrap lead-grid"><div class="reveal"><div class="eyebrow">Una prima risorsa gratuita</div><h2>Da dove cominciare?</h2><p class="muted">Scarica una guida introduttiva e scopri alcuni segnali che possono indicare che una relazione sta riattivando una ferita del passato.</p></div><form class="lead-box reveal" id="leadForm"><input type="text" id="leadName" aria-label="Nome" placeholder="Il tuo nome" required><input type="email" id="leadEmail" aria-label="Email" placeholder="La tua email" required><button class="btn btn-primary" type="submit">Ricevi la guida →</button><small class="muted">Nessuna promessa terapeutica. Informazioni e risorse divulgative.</small></form></div></section>
 
-<section class="final" id="contatti"><div class="wrap reveal"><div class="eyebrow" data-i18n="final.eyebrow">Il primo passo</div><h2 data-i18n="final.h2">Non devi avere tutte le risposte.</h2><p data-i18n="final.p">Puoi iniziare raccontando semplicemente ciò che stai vivendo. Da lì si può capire quale direzione abbia più senso per te.</p><a class="btn btn-primary" href="#orientamento" data-i18n="final.cta">Richiedi un primo orientamento →</a><p style="margin-top:22px;font-size:.9rem;color:#a9b6b8" data-i18n="final.mail">Per informazioni e accompagnamento: <a href="mailto:bloomroom.lab@gmail.com" style="color:#fff;border-bottom:1px solid rgba(255,255,255,.4)">bloomroom.lab@gmail.com</a></p></div></section>
+<section class="final" id="contatti"><div class="wrap reveal"><div class="eyebrow">Il primo passo</div><h2>Non devi avere tutte le risposte.</h2><p>Puoi iniziare raccontando semplicemente ciò che stai vivendo. Da lì si può capire quale direzione abbia più senso per te.</p><a class="btn btn-primary" href="#orientamento">Richiedi un primo orientamento →</a><p style="margin-top:22px;font-size:.9rem;color:#a9b6b8">Per informazioni e accompagnamento: <a href="mailto:bloomroom.lab@gmail.com" style="color:#fff;border-bottom:1px solid rgba(255,255,255,.4)">bloomroom.lab@gmail.com</a></p></div></section>
 </main>
-<footer><div class="wrap"><div class="footer-grid"><div><div class="brand">BloomRoom <span>Lab</span></div><div class="footer-note" style="font-style:italic;color:#9fb0b4;margin-top:6px;margin-bottom:0" data-i18n="footer.tagline">Dalla Ferita alla Scelta</div><div class="footer-note" data-i18n="footer.p1">BloomRoom Lab è un centro professionale e uno spazio di divulgazione psicologica su manipolazione affettiva, trauma relazionale e recupero della propria identità. Contenuti chiari, basati sui fatti, per uscire dalla confusione e mettere in opera le basi della tua rinascita.</div><div class="footer-note" data-i18n="footer.p2">Il contenuto del sito ha finalità informative e non sostituisce una valutazione o un trattamento professionale.</div></div><div class="footer-links"><a href="https://www.youtube.com/@BloomRoomLab" target="_blank">YouTube</a><a href="https://www.instagram.com/lis.bloomroomlab/" target="_blank">Instagram</a><a href="https://www.facebook.com/bloomroom.lab" target="_blank">Facebook</a><a href="mailto:bloomroom.lab@gmail.com" data-i18n="footer.email">Email</a><a href="#" data-i18n="footer.privacy">Privacy</a><a href="#" data-i18n="footer.cookie">Cookie</a></div></div></div></footer>
+<footer><div class="wrap"><div class="footer-grid"><div><div class="brand">BloomRoom <span>Lab</span></div><div class="footer-note" style="font-style:italic;color:#9fb0b4;margin-top:6px;margin-bottom:0">Dalla Ferita alla Scelta</div><div class="footer-note">BloomRoom Lab è un centro professionale e uno spazio di divulgazione psicologica su manipolazione affettiva, trauma relazionale e recupero della propria identità. Contenuti chiari, basati sui fatti, per uscire dalla confusione e mettere in opera le basi della tua rinascita.</div><div class="footer-note">Il contenuto del sito ha finalità informative e non sostituisce una valutazione o un trattamento professionale.</div></div><div class="footer-links"><a href="https://www.youtube.com/@BloomRoomLab" target="_blank">YouTube</a><a href="https://www.instagram.com/lis.bloomroomlab/" target="_blank">Instagram</a><a href="https://www.facebook.com/bloomroom.lab" target="_blank">Facebook</a><a href="mailto:bloomroom.lab@gmail.com">Email</a><a href="#">Privacy</a><a href="#">Cookie</a></div></div></div></footer>
 <script>
-  const LANG_KEY='brl_lang';
-  const DEFAULT_LANG='it';
-  const esCountries=['PE','ES','MX','AR','CO','CL','VE','EC','GT','CU','BO','DO','HN','PY','SV','NI','CR','PA','UY','PR','GQ'];
-
-  const I18N = {
-    'nav.metodo':{it:'Il Metodo',es:'El Metodo'},
-    'nav.percorsi':{it:'Percorsi',es:'Rutas'},
-    'nav.chisiamo':{it:'Chi Sono',es:'Quien Soy'},
-    'nav.blog':{it:'Blog',es:'Blog'},
-    'nav.contatti':{it:'Contatti',es:'Contacto'},
-    'hero.eyebrow':{it:'Psicologia · Trauma Relazionale · Transpersonale',es:'Psicología · Trauma Relacional · Transpersonal'},
-    'hero.h1':{it:'Quello che ti è successo non deve decidere chi diventerai.',es:'Lo que te ha pasado no tiene que decidir quién vas a ser.'},
-    'hero.lead':{it:'Uno spazio professionale per comprendere le ferite relazionali, integrare ciò che hai vissuto e sviluppare un modo nuovo di stare in relazione con te stesso e con gli altri.',es:'Un espacio profesional para comprender las heridas relacionales, integrar lo que has vivido y desarrollar una nueva forma de relacionarte contigo mismo y con los demás.'},
-    'hero.cta1':{it:'Inizia da qui →',es:'Empieza aquí →'},
-    'hero.cta2':{it:'Scopri l\'approccio',es:'Descubre el enfoque'},
-    'hero.t1':{it:'Approccio integrato',es:'Enfoque integrado'},
-    'hero.t2':{it:'Contenuti specialistici',es:'Contenidos especializados'},
-    'hero.t3':{it:'Percorsi online',es:'Rutas online'},
-    'hero.t4':{it:'Spazio riservato',es:'Espacio reservado'},
-    'hero.card':{it:'Comprendere · Integrare · Trasformare',es:'Comprender · Integrar · Transformar'},
-    'riconosci.eyebrow':{it:'Forse ti riconosci',es:'Quizá te reconozcas'},
-    'riconosci.h2':{it:'Quando sai che qualcosa deve cambiare, ma non sai ancora come.',es:'Cuando sabes que algo debe cambiar, pero aún no sabes cómo.'},
-    'riconosci.p':{it:'Non sempre il problema è capire cosa fare. A volte il lavoro più profondo è comprendere perché continuiamo a reagire, scegliere e proteggerci nello stesso modo.',es:'No siempre el problema es saber qué hacer. A veces el trabajo más profundo es comprender por qué seguimos reaccionando, eligiendo y protegiéndonos de la misma manera.'},
-    'riconosci.p1':{it:'Ripeti gli stessi schemi',es:'Repites los mismos patrones'},
-    'riconosci.p1d':{it:'Nelle relazioni, nelle scelte o nel modo in cui affronti il conflitto.',es:'En las relaciones, en las decisiones o en la forma en que afrontas el conflicto.'},
-    'riconosci.p2':{it:'Fai fatica a sentirti al sicuro',es:'Te cuesta sentirte seguro'},
-    'riconosci.p2d':{it:'Dentro una relazione, nel tuo corpo o semplicemente nella tua vita quotidiana.',es:'Dentro de una relación, en tu cuerpo o simplemente en tu vida cotidiana.'},
-    'riconosci.p3':{it:'Dai troppo agli altri',es:'Das demasiado a los demás'},
-    'riconosci.p3d':{it:'E ti accorgi di perdere progressivamente il contatto con i tuoi bisogni.',es:'Y te das cuenta de que pierdes progresivamente el contacto con tus necesidades.'},
-    'riconosci.p4':{it:'Comprendi ma non riesci a cambiare',es:'Comprendes pero no logras cambiar'},
-    'riconosci.p4d':{it:'La consapevolezza razionale non sempre modifica automaticamente le risposte emotive.',es:'La conciencia racional no siempre modifica automáticamente las respuestas emocionales.'},
-    'riconosci.p5':{it:'Una storia continua a pesare',es:'Una historia sigue pesando'},
-    'riconosci.p5d':{it:'Un\'esperienza, una perdita o una relazione può continuare a influenzare il presente.',es:'Una experiencia, una pérdida o una relación puede seguir influyendo en el presente.'},
-    'riconosci.p6':{it:'Vuoi andare più in profondità',es:'Quieres ir más a fondo'},
-    'riconosci.p6d':{it:'Non solo "stare meglio", ma sviluppare maggiore consapevolezza e libertà di scelta.',es:'No solo "sentirse mejor", sino desarrollar mayor conciencia y libertad de elección.'},
-    'metodo.eyebrow':{it:'L\'approccio BloomRoom',es:'El enfoque BloomRoom'},
-    'metodo.h2':{it:'Dalla sopravvivenza alla presenza. Dalla ripetizione alla scelta.',es:'De la supervivencia a la presencia. De la repetición a la elección.'},
-    'metodo.p':{it:'Un linguaggio che integra psicologia del trauma relazionale, lavoro sulla consapevolezza e prospettiva transpersonale, senza ridurre la persona alla sua storia.',es:'Un lenguaje que integra psicología del trauma relacional, trabajo sobre la conciencia y perspectiva transpersonal, sin reducir a la persona a su historia.'},
-    'metodo.n1':{it:'COMPRENDERE',es:'COMPRENDER'},
-    'metodo.h3a':{it:'Dare un significato a ciò che vivi.',es:'Dar significado a lo que vives.'},
-    'metodo.pa':{it:'Trauma relazionale, attaccamento, schemi emotivi e dinamiche relazionali diventano leggibili.',es:'El trauma relacional, el apego, los patrones emocionales y las dinámicas relacionales se vuelven legibles.'},
-    'metodo.n2':{it:'INTEGRARE',es:'INTEGRAR'},
-    'metodo.h3b':{it:'Creare più sicurezza dentro di te.',es:'Crear más seguridad dentro de ti.'},
-    'metodo.pb':{it:'Il lavoro considera esperienza, emozioni, corpo, consapevolezza e relazione come dimensioni interconnesse.',es:'El trabajo considera la experiencia, las emociones, el cuerpo, la conciencia y la relación como dimensiones interconectadas.'},
-    'metodo.n3':{it:'TRASFORMARE',es:'TRANSFORMAR'},
-    'metodo.h3c':{it:'Aprire possibilità nuove.',es:'Abrir posibilidades nuevas.'},
-    'metodo.pc':{it:'Lo sviluppo transpersonale amplia la prospettiva e sostiene un rapporto più coerente con ciò che conta per te.',es:'El desarrollo transpersonal amplía la perspectiva y sostiene una relación más coherente con lo que te importa.'},
-    'about.eyebrow':{it:'Chi c\'è dietro BloomRoom',es:'Quién está detrás de BloomRoom'},
-    'about.h2':{it:'Prima di accompagnarti, voglio che tu sappia chi sono.',es:'Antes de acompañarte, quiero que sepas quién soy.'},
-    'about.p':{it:'La fiducia nasce dall\'incontro tra competenza e presenza. Questa sezione è progettata per raccontare formazione, specializzazioni, esperienza professionale, metodo e valori senza trasformare la biografia in un curriculum infinito.',es:'La confianza nace del encuentro entre competencia y presencia. Esta sección está diseñada para contar formación, especializaciones, experiencia profesional, método y valores sin convertir la biografía en un currículum infinito.'},
-    'about.spec':{it:'Specialista in traumi relazionali e dinamiche di abuso psicologico.',es:'Especialista en traumas relacionales y dinámicas de abuso psicológico.'},
-    'about.cred1':{it:'Formazione: <a href="https://www.inakipinuel.com" target="_blank" rel="noopener">Instituto Iñaki Piñuel</a> — Madrid',es:'Formación: <a href="https://www.inakipinuel.com" target="_blank" rel="noopener">Instituto Iñaki Piñuel</a> — Madrid'},
-    'about.cred2':{it:'Escuela Sistémica Transpersonal (EDTe) — Universidad Miguel de Cervantes, Madrid',es:'Escuela Sistémica Transpersonal (EDTe) — Universidad Miguel de Cervantes, Madrid'},
-    'about.cta':{it:'Conosci la professionista →',es:'Conoce a la profesional →'},
-    'video.eyebrow':{it:'BloomRoom su YouTube',es:'BloomRoom en YouTube'},
-    'video.h2':{it:'Inizia da una domanda.',es:'Empieza con una pregunta.'},
-    'video.p':{it:'Il canale editoriale è già un asset forte del brand: video, pratiche, approfondimenti e contenuti divulgativi possono diventare il cuore della relazione con il pubblico.',es:'El canal editorial ya es un activo fuerte de la marca: vídeos, prácticas, profundizaciones y contenidos divulgativos pueden convertirse en el corazón de la relación con el público.'},
-    'video.canale':{it:'CANALE',es:'CANAL'},
-    'video.canaleb':{it:'BloomRoom Lab · Psicologia del Trauma Relazionale',es:'BloomRoom Lab · Psicología del Trauma Relacional'},
-    'video.contenuto':{it:'CONTENUTO',es:'CONTENIDO'},
-    'video.contenutob':{it:'Approfondimenti e divulgazione psicologica',es:'Profundizaciones y divulgación psicológica'},
-    'video.playlistb':{it:'Esplora le serie e le raccolte',es:'Explora las series y colecciones'},
-    'servizi.eyebrow':{it:'Percorsi & Servizi',es:'Rutas & Servicios'},
-    'servizi.h2':{it:'Non esiste un unico modo di stare meglio. Esiste il percorso più coerente con ciò che stai vivendo.',es:'No existe una única forma de estar mejor. Existe la ruta más coherente con lo que estás viviendo.'},
-    'servizi.p':{it:'La pagina non deve costringere l\'utente a "comprare". Deve aiutarlo a riconoscersi, orientarsi e compiere il passo successivo con meno incertezza.',es:'La página no debe obligar al usuario a "comprar". Debe ayudarle a reconocerse, orientarse y dar el siguiente paso con menos incertidumbre.'},
-    'servizi.s1h':{it:'Percorso individuale',es:'Ruta individual'},
-    'servizi.s1p':{it:'Uno spazio riservato per lavorare sulla propria storia, sulle relazioni, sugli schemi e sugli obiettivi personali.',es:'Un espacio reservado para trabajar tu historia, tus relaciones, tus patrones y tus objetivos personales.'},
-    'servizi.s1c':{it:'Scopri il percorso →',es:'Descubre la ruta →'},
-    'servizi.s2tag':{it:'Sviluppo',es:'Desarrollo'},
-    'servizi.s2h':{it:'Sviluppo transpersonale',es:'Desarrollo transpersonal'},
-    'servizi.s2p':{it:'Per chi desidera approfondire consapevolezza, significato, identità e possibilità di trasformazione.',es:'Para quienes desean profundizar conciencia, significado, identidad y posibilidades de transformación.'},
-    'servizi.s2c':{it:'Scopri il percorso →',es:'Descubre la ruta →'},
-    'servizi.s3tag':{it:'Formazione',es:'Formación'},
-    'servizi.s3h':{it:'Corsi online',es:'Cursos online'},
-    'servizi.s3p':{it:'Contenuti strutturati per apprendere strumenti e approfondire temi specifici in autonomia.',es:'Contenidos estructurados para aprender herramientas y profundizar temas específicos de forma autónoma.'},
-    'servizi.s3c':{it:'Esplora la formazione →',es:'Explora la formación →'},
-    'servizi.s4tag':{it:'Esperienze',es:'Experiencias'},
-    'servizi.s4h':{it:'Workshop & masterclass',es:'Workshop & masterclass'},
-    'servizi.s4p':{it:'Esperienze intensive dedicate a temi specifici, divulgazione e pratica consapevole.',es:'Experiencias intensivas dedicadas a temas específicos, divulgación y práctica consciente.'},
-    'servizi.s4c':{it:'Vedi gli appuntamenti →',es:'Ver los encuentros →'},
-    'lab.h2':{it:'Un laboratorio per comprendere ciò che accade dentro di noi.',es:'Un laboratorio para comprender lo que ocurre dentro de nosotros.'},
-    'lab.p':{it:'Il sito diventa una piattaforma editoriale: articoli, video, risorse e percorsi collegati tra loro.',es:'El sitio se convierte en una plataforma editorial: artículos, vídeos, recursos y rutas conectados entre sí.'},
-    'lab.a1h':{it:'Il trauma non è solo ciò che è accaduto',es:'El trauma no es solo lo que ha ocurrido'},
-    'lab.a1p':{it:'È ciò che il corpo continua a ricordare — perché lavorare sul trauma non significa solo comprendere il passato, ma riconoscere come dirige il presente.',es:'Es lo que el cuerpo sigue recordando — porque trabajar el trauma no significa solo comprender el pasado, sino reconocer cómo dirige el presente.'},
-    'lab.a2h':{it:'Il Testimone interiore',es:'El Testigo interior'},
-    'lab.a2p':{it:'Non sei ciò che accade, sei chi osserva ciò che sta accadendo — come sviluppare la capacità di riconoscere un\'emozione senza esserne governati.',es:'No eres lo que ocurre, eres quien observa lo que está ocurriendo — cómo desarrollar la capacidad de reconocer una emoción sin ser gobernados por ella.'},
-    'lab.a3h':{it:'Il nostro lato oscuro',es:'Nuestro lado oscuro'},
-    'lab.a3p':{it:'Il cammino per tornare a casa — conoscere ciò che abbiamo imparato a rifiutare di noi stessi, senza doverlo assecondare.',es:'El camino para volver a casa — conocer lo que hemos aprendido a rechazar de nosotros mismos, sin tener que complacerlo.'},
-    'lab.leggi':{it:'Leggi l\'approfondimento →',es:'Lee el artículo →'},
-    'lead.eyebrow':{it:'Una prima risorsa gratuita',es:'Un primer recurso gratuito'},
-    'lead.h2':{it:'Da dove cominciare?',es:'¿Por dónde empezar?'},
-    'lead.p':{it:'Scarica una guida introduttiva e scopri alcuni segnali che possono indicare che una relazione sta riattivando una ferita del passato.',es:'Descarga una guía introductoria y descubre algunas señales que pueden indicar que una relación está reactivando una herida del pasado.'},
-    'lead.btn':{it:'Ricevi la guida →',es:'Recibe la guía →'},
-    'lead.note':{it:'Nessuna promessa terapeutica. Informazioni e risorse divulgative.',es:'Sin promesas terapéuticas. Información y recursos divulgativos.'},
-    'final.eyebrow':{it:'Il primo passo',es:'El primer paso'},
-    'final.h2':{it:'Non devi avere tutte le risposte.',es:'No tienes que tener todas las respuestas.'},
-    'final.p':{it:'Puoi iniziare raccontando semplicemente ciò che stai vivendo. Da lì si può capire quale direzione abbia più senso per te.',es:'Puedes empezar simplemente contando lo que estás viviendo. Desde ahí se puede entender qué dirección tiene más sentido para ti.'},
-    'final.cta':{it:'Richiedi un primo orientamento →',es:'Solicita una primera orientación →'},
-    'final.mail':{it:'Per informazioni e accompagnamento: <a href="mailto:bloomroom.lab@gmail.com" style="color:#fff;border-bottom:1px solid rgba(255,255,255,.4)">bloomroom.lab@gmail.com</a>',es:'Para información y acompañamiento: <a href="mailto:bloomroom.lab@gmail.com" style="color:#fff;border-bottom:1px solid rgba(255,255,255,.4)">bloomroom.lab@gmail.com</a>'},
-    'footer.tagline':{it:'Dalla Ferita alla Scelta',es:'De la Herida a la Elección'},
-    'footer.p1':{it:'BloomRoom Lab è un centro professionale e uno spazio di divulgazione psicologica su manipolazione affettiva, trauma relazionale e recupero della propria identità. Contenuti chiari, basati sui fatti, per uscire dalla confusione e mettere in opera le basi della tua rinascita.',es:'BloomRoom Lab es un centro profesional y un espacio de divulgación psicológica sobre manipulación afectiva, trauma relacional y recuperación de la propia identidad. Contenidos claros, basados en los hechos, para salir de la confusión y poner en marcha las bases de tu renacimiento.'},
-    'footer.p2':{it:'Il contenuto del sito ha finalità informative e non sostituisce una valutazione o un trattamento professionale.',es:'El contenido del sitio tiene fines informativos y no sustituye una evaluación o un tratamiento profesional.'},
-    'footer.email':{it:'Email',es:'Email'},
-    'footer.privacy':{it:'Privacy',es:'Privacidad'},
-    'footer.cookie':{it:'Cookie',es:'Cookies'}
-  };
-
-  function detectCountryLang(cb){
-    if (typeof fetch === 'undefined'){ cb(null); return; }
-    const ctrl = (typeof AbortController!=='undefined') ? new AbortController() : null;
-    const timer = (typeof AbortController!=='undefined') ? setTimeout(()=>ctrl.abort(), 3000) : null;
-    fetch('https://ipapi.co/json/', {signal: ctrl && ctrl.signal})
-      .then(r=>r.json())
-      .then(d=>{ if(timer)clearTimeout(timer); cb(d && d.country_code ? d.country_code : null); })
-      .catch(()=>{ if(timer)clearTimeout(timer); cb(null); });
-  }
-
-  function browserLang(){
-    const langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language||''];
-    for (let i=0;i<langs.length;i++){
-      const l=(langs[i]||'').toLowerCase();
-      if (l.indexOf('it')===0) return 'it';
-      if (l.indexOf('es')===0) return 'es';
-    }
-    return null;
-  }
-
-  function resolveLang(saved){
-    if (saved && (saved==='it'||saved==='es')) return saved;
-    const b = browserLang();
-    if (b) return b;
-    return DEFAULT_LANG;
-  }
-
-  function applyLang(lang){
-    document.documentElement.lang = lang;
-    document.querySelectorAll('[data-i18n]').forEach(el=>{
-      const key=el.getAttribute('data-i18n');
-      const entry=I18N[key];
-      if (!entry) return;
-      const txt=entry[lang] || entry[DEFAULT_LANG] || '';
-      if (el.children.length && el.innerHTML && el.querySelector('a')){
-        el.innerHTML = txt;
-      } else {
-        el.textContent = txt;
-      }
-    });
-    document.querySelectorAll('.lang-switch button').forEach(btn=>{
-      btn.classList.toggle('active', btn.getAttribute('data-lang')===lang);
-    });
-    document.title = lang==='es'
-      ? 'BloomRoom Lab — Trauma Relacional & Desarrollo Transpersonal'
-      : 'BloomRoom Lab — Trauma Relazionale & Sviluppo Transpersonale';
-    const desc=document.querySelector('meta[name="description"]');
-    if(desc){ desc.setAttribute('content', lang==='es'
-      ? 'BloomRoom Lab — Psicología del Trauma Relacional, Terapia Transpersonal y desarrollo personal. Un espacio profesional para comprender, integrar y transformar.'
-      : 'BloomRoom Lab — Psicologia del Trauma Relazionale, Terapia Transpersonale e sviluppo personale. Uno spazio professionale per comprendere, integrare e trasformare.'); }
-  }
-
-  document.querySelectorAll('.lang-switch button').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-      const lang=btn.getAttribute('data-lang');
-      try{ localStorage.setItem(LANG_KEY, lang); }catch(e){}
-      applyLang(lang);
-    });
-  });
-
-  let saved=null;
-  try{ saved=localStorage.getItem(LANG_KEY); }catch(e){}
-  const initial = resolveLang(saved);
-  applyLang(initial);
-
-  if (!saved){
-    detectCountryLang(country=>{
-      if (country && initial===DEFAULT_LANG){
-        const wants = esCountries.includes(country) ? 'es' : (country==='IT' ? 'it' : null);
-        if (wants && wants!==initial){
-          applyLang(wants);
-          try{ localStorage.setItem(LANG_KEY, wants); }catch(e){}
-        }
-      }
-    });
-  }
-
   const nav=document.getElementById('nav');
   addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passive:true});
   const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.08});
   document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+  const leadForm = document.getElementById('leadForm');
+  leadForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    const btn = leadForm.querySelector('button');
+    const originalText = btn.textContent;
+    const name = document.getElementById('leadName').value;
+    const email = document.getElementById('leadEmail').value;
+    btn.textContent = 'Invio...';
+    fetch('/api/subscribe', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ name, email })
+    })
+    .then(r => r.json())
+    .then(data => {
+      if (data.ok) {
+        btn.textContent = 'Richiesta registrata ✓';
+        leadForm.reset();
+      } else {
+        btn.textContent = 'Errore, riprova';
+        setTimeout(()=>{ btn.textContent = originalText; }, 2500);
+      }
+    })
+    .catch(() => {
+      btn.textContent = 'Errore, riprova';
+      setTimeout(()=>{ btn.textContent = originalText; }, 2500);
+    });
+  });
 </script>
 </body>
 </html>
