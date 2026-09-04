@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chi sono — BloomRoom Lab</title>
+<meta name="description" content="Profilo professionale: specialista in trauma relazionale, dinamiche di abuso psicologico e sviluppo transpersonale.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  /* Stessi token del sito principale, per coerenza di brand */
+  :root{
+    --bg-deep:     #12132b;
+    --bg-panel:    #191b3d;
+    --bg-panel-2:  #20224a;
+    --ink:         #f4f1ea;
+    --ink-muted:   #aeb1cf;
+    --teal:        #57d9c3;
+    --gold:        #cda05f;
+    --violet:      #6a5acd;
+    --line:        rgba(244,241,234,0.12);
+    --line-strong: rgba(244,241,234,0.22);
+    --serif: 'Fraunces', Georgia, serif;
+    --sans:  'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --max-w: 1080px;
+  }
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0; background:var(--bg-deep); color:var(--ink);
+    font-family:var(--sans); font-size:17px; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; }
+  h1,h2,h3{ font-family:var(--serif); font-weight:500; line-height:1.15; margin:0; }
+  p{ margin:0; }
+  .container{ max-width:var(--max-w); margin:0 auto; padding:0 24px; }
+  @media (prefers-reduced-motion: reduce){ *{ animation-duration:.001ms!important; transition-duration:.001ms!important; } }
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--teal); outline-offset:3px; }
+
+  /* ---------- HERO / IDENTITÀ ---------- */
+  .identity{ padding:100px 0 84px; border-bottom:1px solid var(--line); }
+  .identity .container{
+    display:grid; grid-template-columns: 220px 1fr; gap:48px; align-items:center;
+  }
+  .id-photo{
+    width:100%; aspect-ratio:1/1; object-fit:cover;
+    border-radius: 62% 38% 55% 45% / 55% 45% 60% 40%;
+    box-shadow: 0 24px 50px rgba(0,0,0,0.35);
+  }
+  .kicker{ color:var(--teal); font-family:var(--serif); font-style:italic; font-size:0.98rem; }
+  .identity h1{ margin-top:14px; font-size:clamp(2rem,4vw,2.9rem); }
+  .identity-tagline{ margin-top:14px; color:var(--ink-muted); font-size:1.08rem; max-width:60ch; }
+  .credentials{
+    margin-top:22px; display:flex; flex-direction:column; gap:6px;
+    font-size:0.94rem; color:var(--ink-muted); border-left:2px solid var(--gold); padding-left:16px;
+  }
+
+  /* ---------- SEZIONE TESTO A BLOCCHI ---------- */
+  section.block{ padding:88px 0; }
+  section.block.alt{ background:var(--bg-panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .block-head{ max-width:64ch; margin-bottom:44px; }
+  .block-head h2{ font-size:clamp(1.7rem,3vw,2.3rem); }
+  .block-head p{ margin-top:16px; color:var(--ink-muted); }
+
+  /* ---------- AREE DI INTERVENTO ---------- */
+  .areas{ display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+  .area{ background:var(--bg-deep); padding:28px; }
+  section.block.alt .area{ background:var(--bg-panel); }
+  .area h3{ font-size:1.08rem; font-weight:500; margin-bottom:8px; }
+  .area p{ color:var(--ink-muted); font-size:0.95rem; }
+
+  /* ---------- CITAZIONE DAL BLOG ---------- */
+  .pull{
+    font-family:var(--serif); font-style:italic; font-size:1.4rem;
+    max-width:52ch; border-left:2px solid var(--teal); padding-left:24px; margin-top:6px;
+  }
+  .pull cite{ display:block; margin-top:14px; font-style:normal; font-family:var(--sans); font-size:0.85rem; color:var(--ink-muted); }
+
+  /* ---------- PRESENZA PUBBLICA ---------- */
+  .channels{ display:flex; flex-wrap:wrap; gap:16px; }
+  .channel{
+    display:flex; align-items:center; gap:12px;
+    background:var(--bg-panel-2); border:1px solid var(--line); border-radius:14px;
+    padding:16px 20px; text-decoration:none; flex:1 1 220px;
+    transition: border-color .2s ease;
+  }
+  section.block:not(.alt) .channel{ background:var(--bg-panel); }
+  .channel:hover{ border-color: var(--line-strong); }
+  .channel-dot{ width:9px; height:9px; border-radius:50%; background:var(--teal); flex:none; }
+  .channel strong{ display:block; font-size:0.98rem; }
+  .channel span{ display:block; color:var(--ink-muted); font-size:0.85rem; margin-top:2px; }
+
+  /* ---------- CTA FINALE ---------- */
+  .final{ padding:100px 0 110px; text-align:left; }
+  .final h2{ font-size:clamp(1.8rem,3.2vw,2.4rem); max-width:20ch; }
+  .final p{ margin-top:18px; color:var(--ink-muted); max-width:52ch; }
+  .btn{
+    display:inline-block; margin-top:30px; font-weight:600; font-size:1rem;
+    color:var(--bg-deep); background:var(--teal); padding:15px 30px; border-radius:999px;
+    text-decoration:none;
+  }
+
+  footer{ padding:32px 0; border-top:1px solid var(--line); color:var(--ink-muted); font-size:0.85rem; }
+  footer a{ text-decoration:none; }
+  footer a:hover{ color:var(--teal); }
+
+  @media (max-width:760px){
+    .identity .container{ grid-template-columns:1fr; text-align:left; }
+    .id-photo{ width:140px; }
+    .areas{ grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ IDENTITÀ ============ -->
+<header class="identity">
+  <div class="container">
+    <img class="id-photo" src="images/portrait_elisa.jpg" alt="Fondatrice di BloomRoom Lab">
+    <div>
+      <span class="kicker">BloomRoom Lab · Dalla Ferita alla Scelta</span>
+      <h1>Specialista in trauma relazionale e dinamiche di abuso psicologico</h1>
+      <p class="identity-tagline">
+        Un lavoro che integra psicologia del trauma, consapevolezza corporea e prospettiva
+        transpersonale — senza mai ridurre la persona alla sua storia.
+      </p>
+      <div class="credentials">
+        <span>Instituto Iñaki Piñuel — Madrid</span>
+        <span>Escuela Sistémica Transpersonal (EDTe) — Universidad Miguel de Cervantes, Madrid</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ APPROCCIO ============ -->
+<section class="block">
+  <div class="container">
+    <div class="block-head">
+      <h2>Un metodo, non una promessa</h2>
+      <p>
+        Il lavoro nasce dall'incontro tra rigore clinico e ampiezza di sguardo: comprendere
+        come il trauma relazionale continua ad agire nel presente, e costruire, con metodo,
+        le condizioni per una scelta reale — non solo per "stare meglio".
+      </p>
+    </div>
+    <p class="pull">
+      "Non si tratta di trascendere prematuramente il dolore, né di utilizzare la dimensione
+      spirituale per allontanarsi dalle parti più difficili dell'esperienza."
+      <cite>Dal blog di BloomRoom Lab — "Il trauma non è solo ciò che è accaduto"</cite>
+    </p>
+  </div>
+</section>
+
+<!-- ============ AREE DI INTERVENTO ============ -->
+<section class="block alt">
+  <div class="container">
+    <div class="block-head">
+      <h2>Aree di intervento</h2>
+      <p>Temi ricorrenti nel lavoro clinico, nella divulgazione e nei contenuti pubblicati.</p>
+    </div>
+    <div class="areas">
+      <div class="area">
+        <h3>Trauma relazionale &amp; attaccamento</h3>
+        <p>Schemi ripetitivi, ipervigilanza, paura dell'abbandono, difficoltà a sentirsi al sicuro in relazione.</p>
+      </div>
+      <div class="area">
+        <h3>Manipolazione psicologica</h3>
+        <p>Dinamiche di abuso emotivo, dipendenza affettiva, narcisismo relazionale, uscita dalla confusione.</p>
+      </div>
+      <div class="area">
+        <h3>Consapevolezza corporea</h3>
+        <p>Il corpo come luogo di osservazione: riconoscere l'attivazione prima di esserne governati.</p>
+      </div>
+      <div class="area">
+        <h3>Sviluppo transpersonale</h3>
+        <p>Significato, identità e trasformazione, oltre la sola remissione del sintomo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRESENZA PUBBLICA ============ -->
+<section class="block">
+  <div class="container">
+    <div class="block-head">
+      <h2>Presenza pubblica</h2>
+      <p>Una comunità di oltre 7.000 persone segue il lavoro di divulgazione su trauma relazionale e crescita personale.</p>
+    </div>
+    <div class="channels">
+      <a class="channel" href="https://www.youtube.com/@BloomRoomLab" target="_blank" rel="noopener">
+        <span class="channel-dot" aria-hidden="true"></span>
+        <span><strong>YouTube</strong><span>@BloomRoomLab</span></span>
+      </a>
+      <a class="channel" href="https://www.instagram.com/lis.bloomroomlab/" target="_blank" rel="noopener">
+        <span class="channel-dot" aria-hidden="true"></span>
+        <span><strong>Instagram</strong><span>@lis.bloomroomlab</span></span>
+      </a>
+      <a class="channel" href="https://www.facebook.com/bloomroom.lab" target="_blank" rel="noopener">
+        <span class="channel-dot" aria-hidden="true"></span>
+        <span><strong>Facebook</strong><span>bloomroom.lab</span></span>
+      </a>
+      <a class="channel" href="https://www.bloomroomlab.com/blog/index.html" target="_blank" rel="noopener">
+        <span class="channel-dot" aria-hidden="true"></span>
+        <span><strong>Blog</strong><span>Articoli e approfondimenti</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINALE ============ -->
+<section class="final">
+  <div class="container">
+    <h2>Il sito completo, per approfondire</h2>
+    <p>Metodo, percorsi disponibili e articoli del blog: tutto su bloomroomlab.com.</p>
+    <a class="btn" href="https://www.bloomroomlab.com">Vai al sito →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <a href="mailto:bloomroom.lab@gmail.com">bloomroom.lab@gmail.com</a> · BloomRoom Lab
+  </div>
+</footer>
+
+</body>
+</html>
